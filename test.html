@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    click the button to demonstrate the prompt box.
+    <button onclick="checkUser()"> click </button>
+
+    <script>
+        function checkUser() {
+            let value = prompt('What is the "official" name of JavaScript?', '');
+            if (value == 'ECMAScript') {
+                alert('Right!');
+            } else {
+                alert("You don't know? ECMAScript!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
