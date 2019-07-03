@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <h3>CHUYỂN ĐỔI TIỀN TỆ</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>Amount</center>
+            </td>
+            <td>From currency</td>
+            <td>loại tiền muốn đổi ra</td>
+        </tr>
+        <tr>
+            <td><input type="number" id="number"></td>
+            <td>
+                <center><select id="from">
+                    <option value="tien 1">Việt nam</option>
+                    <option value="tien 2">USD</option>
+                </select></center>
+                <td><select id="to">
+                <option value="tien 2">USD</option>
+                <option value="tien 1">Việt Nam</option>
+                </select></td>
+                <td><button type="button" onclick="convert();">CONVERT</button></td>
+        </tr>
+
+    </table>
+    <script>
+        function convert() {
+            let from = document.getElementById("from").Value;
+            let to = document.getElementById("to").value;
+            let number = document.getElementById("number").value;
+
+            let result;
+            if (from == "tien 1" && to == "tien 2") {
+                result = number / 2300;
+                document.getElementById("result").value = result;
+            }
+            if (from == "tien 2" && to == "tien 1") {
+                result = number * 2300;
+                document.getElementById("result").value = result;
+            }
+            if ((from == "tien1" && to == "tien1") || (from == "tien2" && to == "tien2")) {
+                result = number * 1;
+                document.getElementById("result").value = result;
+            }
+        }
+    </script>
+</head>
+
+</html>
