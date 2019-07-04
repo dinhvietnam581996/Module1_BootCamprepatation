@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <fomr name="CALCULATOR">
+    </fomr>
+    <table>
+        <tr>
+            <tr colspan="4"><input type="number" name="display" id="value1"></tr>
+            <td colspan="4"><input type="number" name="display" id="value2"></td>
+        </tr>
+    </table>
+    <tr>
+        <td><input type="button" name="one" value="Addition(+)" onclick="sum()"></td>
+        <td><input type="button" name="one" value="Subtraction(-)" onclick="subtration()"></td>
+        <td><input type="button" name="one" value="Multiplication(X)" onclick="Multiplication()"></td>
+        <td><input type="button" name="one" value="Division(/)" onclick="Division()"></td>
+    </tr>
+    <p id="ketqua"></p>
+
+    <script>
+        function sum() {
+            let number1 = parseInt(document.getElementById("value1").value);
+            let number2 = parseInt(document.getElementById("value2").value);
+
+            let result = number1 + number2;
+
+            document.getElementById("ketqua").innerHTML = result;
+
+        }
+
+        function subtration() {
+            let number1 = parseInt(document.getElementById("value1").value);
+            let number2 = parseInt(document.getElementById("value2").value);
+
+            let result = number1 - number2;
+
+            document.getElementById("ketqua").innerHTML = result;
+        }
+
+        function Multiplication() {
+            let number1 = parseInt(document.getElementById("value1").value);
+            let number2 = parseInt(document.getElementById("value2").value);
+
+            let result = number1 * number2;
+
+            document.getElementById("ketqua").innerHTML = result;
+        }
+
+        function Division() {
+            let number1 = parseInt(document.getElementById("value1").value);
+            let number2 = parseInt(document.getElementById("value2").value);
+
+            let result = number1 / number2;
+
+            document.getElementById("ketqua").innerHTML = result;
+            console.log()
+        }
+    </script>
+</body>
+
+</html>
