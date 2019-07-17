@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        let Rectangle = function(width, length, acreage, perimeter) {
+            this.width = width;
+            this.getWidth = function() {
+                return this.width;
+            }
+            this.length = length;
+            this.getLength = function() {
+                return this.length;
+            }
+            this.acreage = acreage;
+            this.getAcreage = function() {
+                return this.acreage;
+            }
+            this.perimeter = perimeter;
+            this.getPerimeter = function() {
+                return this.perimeter
+            }
+            this.setWidth = function(width) {
+                this.width = width;
+            }
+            this.setLength = function(length) {
+                this.length = length;
+            }
+            this.setAcreage = function(acreage) {
+                this.acreage = acreage;
+            }
+            this.setPerimeter = function(perimeter) {
+                this.perimeter = perimeter;
+            }
+        };
+
+        let hinhchunhat = new Rectangle(4, 6, 3, 5);
+
+        document.write("chieu rong: " + hinhchunhat.width + "chieu dai: " + hinhchunhat.length + hinhchunhat.perimeter)
+    </script>
+</body>
+
+</html>
